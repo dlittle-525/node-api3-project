@@ -8,7 +8,7 @@ const server = express();
 server.use(express.json())
 
 // global middlewares and the user's router need to be connected here
-server.use(logger("verbose"))
+server.use(logger())
 server.use(userRouter)
 
 server.use((err,req, res, next) => {
