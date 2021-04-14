@@ -38,7 +38,7 @@ function validateUser() {
   }
 }
 
-function validatePost(req, res, next) {
+function validatePost() {
   // DO YOUR MAGIC
   return (req, res, next) => {
     if (!req.body.text) {
